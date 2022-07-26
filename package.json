@@ -10,6 +10,10 @@
     "commit": "cz",
     "lint": "eslint --cache --cache-location cache/.eslintcache --ignore-path .gitignore --ext .ts,.tsx .",
     "lint:fix": "npm run lint -- --fix",
+    "lint:style": "stylelint --cache --cache-location cache/.stylelintcache --ignore-path .gitignore \"**/*.css\"",
+    "lint:style:fix": "npm run lint:style -- --fix",
+    "lint:all": "npm run lint && npm run lint:style",
+    "lint:all:fix": "npm run lint -- --fix && npm run lint:style -- --fix",
     "format": "prettier -uw --cache --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -36,6 +40,9 @@
     "eslint-plugin-react": "^7.30.1",
     "husky": "^8.0.1",
     "prettier": "2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
   }
