@@ -14,7 +14,11 @@
     "lint:style:fix": "npm run lint:style -- --fix",
     "lint:all": "npm run lint && npm run lint:style",
     "lint:all:fix": "npm run lint -- --fix && npm run lint:style -- --fix",
-    "format": "prettier -uw --cache --ignore-path .gitignore ."
+    "format": "prettier -uw --cache --ignore-path .gitignore .",
+    "test": "cypress open",
+    "test:components": "cypress run --component",
+    "test:e2e": "cypress run --e2e",
+    "test:all": "npm run test:components && npm run test:e2e"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -29,9 +33,11 @@
     "@typescript-eslint/parser": "^5.30.7",
     "@vitejs/plugin-react": "^2.0.0",
     "commitizen": "^4.2.5",
+    "cypress": "^10.3.1",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-n": "^15.2.4",

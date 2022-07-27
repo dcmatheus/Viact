@@ -33,3 +33,8 @@ dist-ssr
 # linters
 .eslintcache
 .stylelintcache
+
+# cypress
+cypress/videos
+cypress/screenshots
+cypress/downloads
