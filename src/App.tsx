@@ -1,8 +1,12 @@
+import tw from 'twin.macro'
+
+const Base = tw.div`bg-black`
+
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">App</h1>
-    </div>
+    <Base>
+      <h1 tw="text-3xl text-white font-bold underline">App</h1>
+    </Base>
   )
 }
 
