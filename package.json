@@ -55,6 +55,7 @@
     "unplugin-icons": "^0.14.11",
     "vite": "^3.0.0",
     "vite-plugin-windicss": "^1.8.8",
+    "vite-tsconfig-paths": "^3.5.1",
     "windicss": "^3.5.6"
   }
 }
