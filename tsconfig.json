@@ -18,7 +18,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./src"
   },
-  "include": ["src", "cypress"],
+  "include": ["src", "cypress", "auto-imports.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
