@@ -12,14 +12,14 @@
     "lint:fix": "pnpm run lint --fix",
     "lint:style": "stylelint --cache --cache-location cache/.stylelintcache --ignore-path .gitignore \"**/*.css\"",
     "lint:style:fix": "pnpm run lint:style --fix",
-    "lint:all": "pnpm run lint || pnpm run lint:style",
-    "lint:all:fix": "pnpm run lint --fix && pnpm run lint:style --fix",
+    "lint:all": "pnpm run lint \n pnpm run lint:style",
+    "lint:all:fix": "pnpm run lint --fix \n pnpm run lint:style --fix",
     "format": "prettier -uw --cache --ignore-path .gitignore .",
     "types": "tsc",
     "test": "cypress open",
     "test:components": "cypress run --component",
     "test:e2e": "cypress run --e2e",
-    "test:all": "pnpm run test:components && pnpm run test:e2e"
+    "test:all": "pnpm run test:components \n pnpm run test:e2e"
   },
   "dependencies": {
     "react": "^18.2.0",
