@@ -18,7 +18,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./src"
   },
-  "include": ["src", "cypress", "auto-imports.d.ts"],
+  "include": ["src", "cypress", "auto-imports.d.ts", ".storybook"],
   "references": [
     {
       "path": "./tsconfig.node.json"

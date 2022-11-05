@@ -12,7 +12,8 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:cypress/recommended',
     'plugin:prettier/recommended',
-    '.eslintrc-auto-import.json'
+    '.eslintrc-auto-import.json',
+    'plugin:storybook/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -41,9 +42,24 @@ module.exports = {
     'import/no-unresolved': 0,
     'react/jsx-filename-extension': [
       'error',
-      { extensions: ['.ts', '.tsx', '.js', '.jsx'] }
+      {
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
+      }
     ],
     'import/extensions': 0,
-    'import/no-extraneous-dependencies': 0
+    'import/no-extraneous-dependencies': 0,
+    'react/function-component-definition': [
+      1,
+      {
+        namedComponents: [
+          'function-declaration',
+          'function-expression',
+          'arrow-function'
+        ]
+      }
+    ],
+    'react/prop-types': 0,
+    'react/require-default-props': 0,
+    'react/jsx-props-no-spreading': 0
   }
 }
